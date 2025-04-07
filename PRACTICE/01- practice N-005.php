@@ -30,6 +30,16 @@
         }
     }
 
+// ----
+
+// nested loops 
+    for ($i = 1; $i <= 5; $i++) {
+        for ($j = 1; $j <= $i; $j++) {
+            echo $i;    // output => 1 \n 22 \n 333 \n 4444 \n 55555
+        }
+        echo "<br>";
+    }
+
     ?>
 </body>
 
