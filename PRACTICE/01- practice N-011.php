@@ -14,3 +14,4 @@
    $occurences = substr_count($ch, $c);
    // echo .....
 ?>
+ 
