@@ -12,3 +12,4 @@
    $day_of_week = date("1", $timestamp); // "1" : Jour complete.
    echo "Le 6 Juillet 2005 était un : $day_of_week \n";
 ?>
+ 
