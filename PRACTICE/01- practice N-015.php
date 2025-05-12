@@ -4,7 +4,7 @@ array_merge() => // Pour fusionner les deux Tableaux.
 array_unique() => // Pour les Nombres doublons entre les deux tableaux.
 array_search() => // Pour chercher un element dans le tableau.
 
-
+ 
 // 1. Définir les deux tableaux.
 $tableau1 = [1, 2, 3, 4, 5];
 $tableau2 = [3, 4, 5, 6, 7];
