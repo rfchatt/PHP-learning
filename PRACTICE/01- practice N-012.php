@@ -13,7 +13,7 @@
    $nom = $parts[0];
    $prenom = $parts[1];
    // afficher le nom en MAJUSCULES == strtoupper() ==.
-   $nom_majuscules = strtoupper($nom);
+   $nom_majuscules = strtoupper($nom); 
    echo $nom_majuscules . " ";
    // afficher le prénom en miniscule sauf la premiere lettre en majiscule.
    $prenom_miniscule = strtolower($prenom);
