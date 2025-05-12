@@ -7,7 +7,7 @@
       setcookie("dates_visites", serialize($dates));
       echo "Vous avez consulter cette page " . count($dates) . "Fois, voici les détailes.";
       echo "<ul>";
-      foreach ($dates as $key => $value) {
+      foreach ($dates as $key => $value) { 
          echo "<li>" . date("d-m-Y H:i:s", $value) . "</li>";
       };
       echo "</ul>";
