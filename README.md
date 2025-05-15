@@ -12,3 +12,6 @@
 
 ## Practice N-013 ✅ 👇
 ![image](https://github.com/user-attachments/assets/789c9754-5c58-46bc-8ee9-0a418e9277d1)
+
+## Practice N-022 ✅ 👇
+![image](https://github.com/user-attachments/assets/d8018293-31c6-49cb-91d0-da61d8542cd8)
