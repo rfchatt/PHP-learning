@@ -15,3 +15,6 @@
 
 ## Practice N-022 ✅ 👇
 ![image](https://github.com/user-attachments/assets/d8018293-31c6-49cb-91d0-da61d8542cd8)
+
+## Practice N-026 ✅ 👇
+![image](https://github.com/user-attachments/assets/95beaa97-5780-48ba-9468-bacd45e3ab8b)
