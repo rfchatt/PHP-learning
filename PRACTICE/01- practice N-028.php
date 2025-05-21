@@ -51,3 +51,14 @@ class Produit {
 
 
 }
+
+$produit = new Produit("Telephone", 1500, 10);
+
+echo $produit->nom . "<br>";
+echo $produit->prix . "<br>";
+echo $produit->stock . "<br>";
+
+$produit->nom = "Iphone 16 pro";
+$produit->prix = 9900;
+$produit->stock = 7;
+
