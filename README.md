@@ -22,5 +22,5 @@
 ## Practice N-028 ✅ 👇
 ![image](https://github.com/user-attachments/assets/849cb022-5fe0-4d1f-bc45-46a5e22f8d63)
 
-## database / Practice N-003 ✅ 👇
-[database/Practice N 003 Questions are Here ..](https://github.com/user-attachments/files/20395646/Tester.la.connexion.avec.la.bdd.pdf)
+## DataBase / Practice N-003 ✅ 👇
+[DataBase/Practice N 003 Questions are Here ..](https://github.com/user-attachments/files/20395646/Tester.la.connexion.avec.la.bdd.pdf)
