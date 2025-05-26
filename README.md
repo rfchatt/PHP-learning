@@ -24,3 +24,6 @@
 
 ## DataBase / Practice N-003 ✅ 👇
 [DataBase/Practice N 003 Questions are Here ..](https://github.com/user-attachments/files/20395646/Tester.la.connexion.avec.la.bdd.pdf)
+
+## DataBase / Practice N-004 ✅ 👇
+![image](https://github.com/user-attachments/assets/b4f2ac17-c04e-4546-bd8f-5f86bc8b99da)
