@@ -8,10 +8,6 @@ if (isset($_GET['ref'])) {
 
     if ($stmt->execute()) {
         header("Location: index.php?msg=suppression_ok");
-        exit();
-
-    } else { echo "Erreur lors de la suppression du produit."; }
-
-} else { echo "Référence du produit manquante."; }
-
+    }
+}
 ?>
