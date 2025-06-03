@@ -1,6 +1,6 @@
 <?php
 
-// Question are on the READNE file of this repo 
+// You can finde This file's Questions on the README file :) 
 
 // ---------------
 
