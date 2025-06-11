@@ -31,7 +31,5 @@
 ## DataBase / Practice N-004 ✅ 👇
 ![image](https://github.com/user-attachments/assets/b4f2ac17-c04e-4546-bd8f-5f86bc8b99da)
 
-## PRACTICES / EFM REGIONAL TTA 2024 JS ✅ 👇
-![image](https://github.com/user-attachments/assets/09a76782-aa96-400a-a35a-a606329388c2)
-![image](https://github.com/user-attachments/assets/8c65a0db-f4e7-4493-a080-2896ae70a6ce)
+
 
