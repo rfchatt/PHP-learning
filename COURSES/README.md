@@ -23,47 +23,47 @@ o	/* ... */ pour plusieurs lignes.<br>
 
 
 ### 3. Variables et Types de Données
-•	Variables :
-o	Commencent par $, sensibles à la casse.
-o	Noms valides : lettres, chiffres, underscores (pas d'espaces ni de caractères spéciaux).
-•	Portée :
-o	Locale : Accessible uniquement dans la fonction.
-o	Globale : Accessible partout, déclarée avec global.
-o	Statique : Conserve sa valeur entre les appels de fonction (static).
-•	Superglobales :
-o	$_GET, $_POST, $_SERVER, $_SESSION, $_COOKIE, etc.
-•	Types de données :
-o	Scalaires : int, float, string, bool.
-o	Composés : array, object, callable, iterable.
-o	Spéciaux : resource, null.
+##	Variables :<br>
+o	Commencent par $, sensibles à la casse.<br>
+o	Noms valides : lettres, chiffres, underscores (pas d'espaces ni de caractères spéciaux).<br>
+##	Portée :<br>
+o	Locale : Accessible uniquement dans la fonction.<br>
+o	Globale : Accessible partout, déclarée avec global.<br>
+o	Statique : Conserve sa valeur entre les appels de fonction (static).<br>
+##	Superglobales :<br>
+o	$_GET, $_POST, $_SERVER, $_SESSION, $_COOKIE, etc.<br>
+##	Types de données :<br>
+o	Scalaires : int, float, string, bool.<br>
+o	Composés : array, object, callable, iterable.<br>
+o	Spéciaux : resource, null.<br>
 
 
 ### 4. Opérateurs
-•	Arithmétiques : +, -, *, /, %, **.
-•	Affectation : =, +=, -=, etc.
-•	Comparaison : ==, ===, !=, !==, >, <, etc.
-•	Logiques : &&, ||, !, and, or, xor.
-•	Incrémentation/Décrémentation : ++, --.
+•	Arithmétiques : +, -, *, /, %, **.<br>
+•	Affectation : =, +=, -=, etc.<br>
+•	Comparaison : ==, ===, !=, !==, >, <, etc.<br>
+•	Logiques : &&, ||, !, and, or, xor.<br>
+•	Incrémentation/Décrémentation : ++, --.<br>
 
 
 ### 5. Structures de Contrôle
-•	Conditionnelles :
-o	if, else, elseif.
-o	switch : Comparaison stricte, nécessite break.
-o	match (PHP 8+) : Retourne une valeur, comparaison stricte.
-•	Boucles :
-o	while, do-while, for, foreach.
-o	break : Sortie de boucle.
-o	continue : Passe à l'itération suivante.
+##	Conditionnelles :<br>
+o	if, else, elseif.<br>
+o	switch : Comparaison stricte, nécessite break.<br>
+o	match (PHP 8+) : Retourne une valeur, comparaison stricte.<br>
+##	Boucles :<br>
+o	while, do-while, for, foreach.<br>
+o	break : Sortie de boucle.<br>
+o	continue : Passe à l'itération suivante.<br>
 
 
 ### 6. Fonctions sur les Chaînes et Dates
-•	Chaînes :
-o	strlen(), str_replace(), strpos(), substr(), strtoupper(), strtolower(), etc.
-•	Dates :
-o	date() : Formate une date (Y-m-d H:i:s).
-o	DateTime : Manipulation avancée des dates.
-o	strtotime() : Convertit une date en timestamp.
+##	Chaînes :<br>
+o	strlen(), str_replace(), strpos(), substr(), strtoupper(), strtolower(), etc.<br>
+##	Dates :<br>
+o	date() : Formate une date (Y-m-d H:i:s).<br>
+o	DateTime : Manipulation avancée des dates.<br>
+o	strtotime() : Convertit une date en timestamp.<br>
 
 
 ### 7. Formulaires et Transmission de Données
