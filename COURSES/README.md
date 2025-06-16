@@ -11,15 +11,15 @@ o	Plus de 500 fonctions intégrées (manipulation d'images, sockets, etc.).
 
 
 ### 2. Bases du Langage PHP
-•	Balises PHP :
-o	Syntaxe recommandée : <?php ... ?>.
-o	Autres syntaxes (dépréciées) : <script language="php"> ... </script>, <? ... ?>.
-•	Affichage :
-o	echo : Affiche du texte, plus rapide, pas de valeur de retour.
-o	print : Affiche du texte, retourne 1, utile dans les expressions.
-•	Commentaires :
-o	// ou # pour une ligne.
-o	/* ... */ pour plusieurs lignes.
+##	Balises PHP :<br>
+o	Syntaxe recommandée : <?php ... ?>.<br>
+o	Autres syntaxes (dépréciées) : <script language="php"> ... </script>, <? ... ?>.<br>
+##	Affichage :<br>
+o	echo : Affiche du texte, plus rapide, pas de valeur de retour.<br>
+o	print : Affiche du texte, retourne 1, utile dans les expressions.<br>
+##	Commentaires :<br>
+o	// ou # pour une ligne.<br>
+o	/* ... */ pour plusieurs lignes.<br>
 
 
 ### 3. Variables et Types de Données
