@@ -1,5 +1,5 @@
 <?php
-require "index.php";
+require "index.html";
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     if(isset($_POST['submit'])){
