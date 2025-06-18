@@ -1,13 +1,13 @@
 ## PHP 
 
 ### 1. Introduction à PHP
-•	Définition : PHP (Hypertext Preprocessor) est un langage de script côté serveur, open source, conçu pour le développement web dynamique.
-•	Historique : Créé en 1994 par Rasmus Lerdorf, initialement pour suivre les visites sur son CV en ligne.
-•	Fonctionnalités :
-o	Intégration facile avec HTML.
-o	Supporte les bases de données (MySQL, PostgreSQL).
-o	Plus de 500 fonctions intégrées (manipulation d'images, sockets, etc.).
-•	Atouts : Gratuit, simple à apprendre, multiplateforme, compatible avec les serveurs (Apache, IIS).
+##	Définition : PHP (Hypertext Preprocessor) est un langage de script côté serveur, open source, conçu pour le développement web dynamique.<br>
+##	Historique : Créé en 1994 par Rasmus Lerdorf, initialement pour suivre les visites sur son CV en ligne.<br>
+##	Fonctionnalités :<br>
+o	Intégration facile avec HTML.<br>
+o	Supporte les bases de données (MySQL, PostgreSQL).<br>
+o	Plus de 500 fonctions intégrées (manipulation d'images, sockets, etc.).<br>
+##	Atouts : Gratuit, simple à apprendre, multiplateforme, compatible avec les serveurs (Apache, IIS).<br>
 
 
 ### 2. Bases du Langage PHP
