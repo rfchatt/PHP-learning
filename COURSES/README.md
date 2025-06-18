@@ -67,42 +67,42 @@ o	strtotime() : Convertit une date en timestamp.<br>
 
 
 ### 7. Formulaires et Transmission de Données
-•	Méthodes :
-o	GET : Données visibles dans l'URL, limitées en taille.
-o	POST : Données cachées, plus sécurisées.
-o	$_REQUEST : Combine GET, POST, et COOKIE (à éviter pour la sécurité).
-•	Validation :
-o	Vérifier les champs obligatoires, formats (email, téléphone), etc.
+##	Méthodes :<br>
+o	GET : Données visibles dans l'URL, limitées en taille.<br>
+o	POST : Données cachées, plus sécurisées.<br>
+o	$_REQUEST : Combine GET, POST, et COOKIE (à éviter pour la sécurité).<br>
+##	Validation :<br>
+o	Vérifier les champs obligatoires, formats (email, téléphone), etc.<br>
 
 
 ### 8. Sessions et Cookies
-•	Sessions :
-o	session_start(), $_SESSION : Stocke des données entre pages.
-•	Cookies :
-o	setcookie() : Stocke des données côté client.
-o	$_COOKIE : Accède aux cookies.
+##	Sessions :<br>
+o	session_start(), $_SESSION : Stocke des données entre pages.<br>
+##	Cookies :<br>
+o	setcookie() : Stocke des données côté client.<br>
+o	$_COOKIE : Accède aux cookies.<br>
 
 
 ### 9. Redirection et En-têtes HTTP
-•	Redirection :
-o	header("Location: page.php").
-o	exit après redirection pour éviter l'exécution supplémentaire.
-•	En-têtes :
-o	header("Content-Type: application/pdf") pour forcer un téléchargement.
+##	Redirection :<br>
+o	header("Location: page.php").<br>
+o	exit après redirection pour éviter l'exécution supplémentaire.<br>
+##	En-têtes :<br>
+o	header("Content-Type: application/pdf") pour forcer un téléchargement.<br>
 
 
 ### 10. Bonnes Pratiques
-•	Sécurité :
-o	Échapper les entrées utilisateur (htmlspecialchars()).
-o	Préférer POST pour les données sensibles.
-•	Performance :
-o	Utiliser des boucles efficaces.
-o	Éviter les requêtes SQL dans les boucles.
+##	Sécurité :<br>
+o	Échapper les entrées utilisateur (htmlspecialchars()).<br>
+o	Préférer POST pour les données sensibles.<br>
+##	Performance :<br>
+o	Utiliser des boucles efficaces.<br>
+o	Éviter les requêtes SQL dans les boucles.<br>
 
 
 #### Points Clés à Retenir
-•	PHP est un langage côté serveur, interprété, et orienté web.
-•	Les variables ont des portées spécifiques (local, global, static).
-•	Les superglobales ($_GET, $_POST) sont essentielles pour les formulaires.
-•	Les structures de contrôle (if, for, foreach) permettent de gérer le flux du programme.
-•	Les sessions et cookies sont utilisés pour persister les données.
+##	PHP est un langage côté serveur, interprété, et orienté web.<br>
+##	Les variables ont des portées spécifiques (local, global, static).<br>
+##	Les superglobales ($_GET, $_POST) sont essentielles pour les formulaires.<br>
+##	Les structures de contrôle (if, for, foreach) permettent de gérer le flux du programme.<br>
+##	Les sessions et cookies sont utilisés pour persister les données.<br>
