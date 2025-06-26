@@ -69,7 +69,67 @@ try {
 
 // B :
 
+session_start();
+$matricule = $_POST['matricule'] ?? '';
+$motPasse = $_POST['motPasse'] ?? '';
 
+if (empty($matricule) || empty($motPasse)) {
+    echo 'veuillez remplir tout les champs';
+    header('Location: login.php?erreur=1');
+    exit();
+}
+
+$sql = $pdo->prepare('SELECT * FROM ResponsableFormation WHERE matricule = ?');
+$sql->execute([$matricule]);
+$responsable = $sql->fetch();
+
+if ($matricule !== $responsable['matricule'] || !password_verify($motPasse, $responsable['motPasse'])) {
+    echo 'Matricule ou mot de passe incorrect';
+    header('Location: login.php');
+    exit();
+} else {
+    header('Location: monCompte.php');
+    exit();
+    $_SESSION['matricule'] = $matricule;
+    $_SESSION['motPasse'] = $motPasse;
+}
+
+// C :
+
+// C - 1) :
+if (empty($_SESSION['matricule'])) {
+    header("Location: login.php");
+    exit();
+}
+
+// C - 2) a :
+      $sql = $pdo->prepare('SELECT * FROM formation, ResponsableFormation WHERE matriculeResponsable = matricule ORDER BY dateDebut DESC');
+      $sql->execute();
+      $formations = $sql->fetchAll();
+      .
+      <?php foreach($formations as $formation);>
+          $dateDebut = new DateTime($formation['dateDebut'])
+          $dateFin = new DateTime($formation['dateFin'])
+          $logo = $formation['logo']
+          $duree = dateDebut->diff(dateFin)->days;
+          $nom = $responsable['nom'];
+          $prenom = $responsable['prenom'];
+          $statut = $formation['formation'] == 0 ? "En cours" : "Terminée";
+        <tr>
+            <td>htmlspecialChars($idformation)</td>
+            <td>htmlspecialChars($titre)</td>
+            <td><img src="images/<?php $logo;>" width="50%" /></td>
+            <td>htmlspecialChars($dateDebut)</td>
+            <td>htmlspecialChars($dateFin)</td>
+            <td>htmlspecialChars($duree)</td>
+            <td>htmlspecialChars($nom . " " . $prenom)</td>
+            <td>htmlspecialChars($statut)</td>
+            <td>
+                <a href="annuler=<? $formation['idFormation'] ?>">Annuler</a><br>
+                <a href="terminer=<? $formation['idFormation'] ?>">Terminer</a> 
+            </td>
+        </tr>
+      <?php endforeach;>
 
 
 
