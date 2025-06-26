@@ -171,11 +171,40 @@ exit();
 
 // E :
 
+$sql = $pdo->prepare('SELECT statut FROM formation WHERE idformation = ?');
+$sql->execute($idformation);
+$formation = $sql->fetch();
+
+if ($formation && $formation['statut'] == 0) {
+    $pdo->prepare('DELETE * FROM formation WHERE idformation = ?');
+        ->execute([$idformation]);
+    echo "Formation annulée avec succès.";
+} else {
+    echo "Erreur: impossible d'Annuler un formation déjà terminée !";
+};
+
+// F :
+
+$sql = $pdo->prepare('SELECT statut FROM formation WHERE idformation = ?');
+$sql->execute($idformation);
+$formation = $sql->fetch();
+
+if ($formation && $formation['statut'] == 0) {
+    $pdo->prepare('UPDATE formation SET statut = 1 WHERE idformation = ?');
+        ->execute([$idformation]);
+        echo "Formation marquée comme terminée";
+} else {
+    echo "Erreur: Action déja effectué !";
+};
+
+// I :
+
+if (SESSION_STATUT() === PHP_SESSION_NONE) {
+    session_start();
+    session_destroy();
+    header('Location: login.php');
+    exit();
+};
 
 
-
-
-
-
-
-
+// ABDERRAFIE CHATE wish you a Good Luck ;) 
