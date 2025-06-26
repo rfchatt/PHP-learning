@@ -102,7 +102,7 @@ if (empty($_SESSION['matricule'])) {
     exit();
 }
 
-// C - 2) a :
+// C - 2) a, b, c :
       $sql = $pdo->prepare('SELECT * FROM formation, ResponsableFormation WHERE matriculeResponsable = matricule ORDER BY dateDebut DESC');
       $sql->execute();
       $formations = $sql->fetchAll();
@@ -131,6 +131,45 @@ if (empty($_SESSION['matricule'])) {
         </tr>
       <?php endforeach;>
 
+// D :
+
+// D - 1) :
+if (!empty($_FILES['logo']['name'])) {
+    $dossier = 'images/';
+    if (!is_dir($dossier)) {
+        mkdir($dossier);
+    };
+    $photo = $_FILES['logo']['name'];
+    $chemin = $dossier . $photo;
+    move_uploaded_file($photo, $chemin);
+}
+
+// D - 2) a, b, c, d :
+$idfomation_valide = /^F_20\d{2}_\d{3}$/;
+if (!preg_match($idfomation_valide, $idfomation)) {
+    echo "Format invalide !";
+}
+
+$sql = $pdo->prepare('SELECT idformation FROM formation WHERE idformation = ?');
+$sql->execute([$idformation]);
+$id = $sql->fetch();
+if ($id) {
+    echo "ID formation déja exits !";
+};
+$current_date = new DateTime();
+if ($dateDebut > $current_date || $dateFin > $current_date) {
+    echo "Date invalide !";
+}
+
+$sql = $pdo->prepare('INSERT INTO formation (idformation, titre, logo, dateDebut, dateFin, status, matriculeResponsable) 
+        VALUES (?, ?, ?, ?, ?, 0, ?)');
+$sql->execute([$idformation, $titre, $logo, $dateDebut, $dateFin, $_SESSION['matricule']]);
+
+// D - 3)
+header("Location: monCompte.php");
+exit();
+
+// E :
 
 
 
