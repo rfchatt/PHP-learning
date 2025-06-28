@@ -67,11 +67,12 @@ try {
 
 // B :
 
+include "config.php";
 session_start();
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   
-    $matricule = $_POST['matricule'] ?? '';
-    $motPasse = $_POST['motPasse'] ?? '';
+    $matricule = $_POST['matricule'];
+    $motPasse = $_POST['motPasse'];
     
     if (empty($matricule) || empty($motPasse)) {
         echo 'veuillez remplir tout les champs';
