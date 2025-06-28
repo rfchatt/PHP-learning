@@ -58,12 +58,8 @@ $password = '';
 $port = 3306;
 
 try {
-    PDO('mysql:host=localhost:dbname=gestionFormations;port=3306','root','') 
-  
-    $pdo = new PDO('mysql:host=$server_name; bdname=$db_name; $root', 'username=$username', 'password=$password');
+    $pdo = new PDO('mysql:host=$server_name;dbname=$db_name;port=$port',$username,$password);
     $pdo->setAttribute(PDO::ATTR_ERMODE, PDO::ERMODE_EXCERTION);
-    $sql = 'CREATE DATABASE IF NOT EXISTS $db_name';
-    $pdo->exec($sql);
     echo "Vous étes connectez avec la base de données !";
 } catch (PDOExecption as $e) {
     echo "Erreur lors la connexion a la bese de données $e->getMessage()";
