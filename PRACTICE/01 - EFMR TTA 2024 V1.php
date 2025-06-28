@@ -80,11 +80,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit();
     }
     
-    $sql = $pdo->prepare('SELECT * FROM ResponsableFormation WHERE matricule = ?');
-    $sql->execute([$matricule]);
+    $sql = $pdo->prepare('SELECT * FROM ResponsableFormation WHERE matricule = ? AND motPasse = ?');
+    $sql->execute([$matricule, $motPasse]);
     $responsable = $sql->fetch();
     
-    if ($matricule !== $responsable['matricule'] || !password_verify($motPasse, $responsable['motPasse'])) {
+    if ($matricule !== $responsable['matricule'] || $motPasse !== $responsable['motPasse']) {
         echo 'Matricule ou mot de passe incorrect';
         header('Location: login.php');
         exit();
