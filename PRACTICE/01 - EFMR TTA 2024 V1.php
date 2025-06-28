@@ -58,7 +58,9 @@ $password = '';
 $port = 3306;
 
 try {
-    $pdo = new PDO('mysql:host=$server_name, $username, $password, $port');
+    PDO('mysql:host=localhost:dbname=gestionFormations;port=3306','root','') 
+  
+    $pdo = new PDO('mysql:host=$server_name; bdname=$db_name; $root', 'username=$username', 'password=$password');
     $pdo->setAttribute(PDO::ATTR_ERMODE, PDO::ERMODE_EXCERTION);
     $sql = 'CREATE DATABASE IF NOT EXISTS $db_name';
     $pdo->exec($sql);
