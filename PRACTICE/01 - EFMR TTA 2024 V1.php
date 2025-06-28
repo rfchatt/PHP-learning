@@ -88,9 +88,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         header('Location: login.php');
         exit();
     } else {
+        $_SESSION['matricule'] = $matricule;
         header('Location: monCompte.php');
         exit();
-        $_SESSION['matricule'] = $matricule;
     }
 }
 
