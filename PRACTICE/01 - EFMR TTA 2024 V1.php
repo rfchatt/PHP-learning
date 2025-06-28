@@ -68,28 +68,31 @@ try {
 // B :
 
 session_start();
-$matricule = $_POST['matricule'] ?? '';
-$motPasse = $_POST['motPasse'] ?? '';
-
-if (empty($matricule) || empty($motPasse)) {
-    echo 'veuillez remplir tout les champs';
-    header('Location: login.php?erreur=1');
-    exit();
-}
-
-$sql = $pdo->prepare('SELECT * FROM ResponsableFormation WHERE matricule = ?');
-$sql->execute([$matricule]);
-$responsable = $sql->fetch();
-
-if ($matricule !== $responsable['matricule'] || !password_verify($motPasse, $responsable['motPasse'])) {
-    echo 'Matricule ou mot de passe incorrect';
-    header('Location: login.php');
-    exit();
-} else {
-    header('Location: monCompte.php');
-    exit();
-    $_SESSION['matricule'] = $matricule;
-    $_SESSION['motPasse'] = $motPasse;
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+  
+    $matricule = $_POST['matricule'] ?? '';
+    $motPasse = $_POST['motPasse'] ?? '';
+    
+    if (empty($matricule) || empty($motPasse)) {
+        echo 'veuillez remplir tout les champs';
+        header('Location: login.php?erreur=1');
+        exit();
+    }
+    
+    $sql = $pdo->prepare('SELECT * FROM ResponsableFormation WHERE matricule = ?');
+    $sql->execute([$matricule]);
+    $responsable = $sql->fetch();
+    
+    if ($matricule !== $responsable['matricule'] || !password_verify($motPasse, $responsable['motPasse'])) {
+        echo 'Matricule ou mot de passe incorrect';
+        header('Location: login.php');
+        exit();
+    } else {
+        header('Location: monCompte.php');
+        exit();
+        $_SESSION['matricule'] = $matricule;
+        $_SESSION['motPasse'] = $motPasse;
+    }
 }
 
 // C :
