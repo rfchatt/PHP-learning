@@ -117,14 +117,14 @@ if (empty($_SESSION['matricule'])) {
           $prenom = $responsable['prenom'];
           $statut = $formation['formation'] == 0 ? "En cours" : "Terminée";
         <tr>
-            <td>htmlspecialChars($idformation)</td>
-            <td>htmlspecialChars($titre)</td>
-            <td><img src="images/<?php $logo;>" width="50%" /></td>
-            <td>htmlspecialChars($dateDebut)</td>
-            <td>htmlspecialChars($dateFin)</td>
-            <td>htmlspecialChars($duree)</td>
-            <td>htmlspecialChars($nom . " " . $prenom)</td>
-            <td>htmlspecialChars($statut)</td>
+            <td><?php echo htmlspecialchars($idformation) ?></td>
+            <td><?php echo htmlspecialchars($titre) ?></td>
+            <td><img src="images/<?php $logo; ?>" width="50%" /></td>
+            <td><?php echo htmlspecialchars($dateDebut) ?></td>
+            <td><?php echo htmlspecialchars($dateFin) ?></td>
+            <td><?php echo htmlspecialchars($duree) ?></td>
+            <td><?php echo htmlspecialchars($nom . " " . $prenom) ?></td>
+            <td><?php echo htmlspecialchars($statut) ?></td>
             <td>
                 <a href="annuler=<? $formation['idFormation'] ?>">Annuler</a><br>
                 <a href="terminer=<? $formation['idFormation'] ?>">Terminer</a> 
